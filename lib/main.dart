@@ -1,5 +1,7 @@
+import 'package:ecommerce_app/views/splash_screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'consts/consts.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    //sử dụng getx
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: appname,
       theme: ThemeData(
@@ -20,6 +23,7 @@ class MyApp extends StatelessWidget {
         ),
         fontFamily: regular,
       ),
+      home: SplashSceens(),
     );
   }
 }
