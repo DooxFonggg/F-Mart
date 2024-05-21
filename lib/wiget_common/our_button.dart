@@ -8,9 +8,7 @@ Widget ourButton({String? name, primary, onPress, color}) {
         padding: EdgeInsets.all(10),
         // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
-      onPressed: () {
-        onPress;
-      },
+      onPressed: onPress,
       child: Text(
         name!,
         style: TextStyle(fontFamily: bold, color: color),

@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/consts/consts.dart';
+import 'package:ecommerce_app/views/auth_screens/signUp_screen.dart';
 import 'package:ecommerce_app/wiget_common/appLogo_witget.dart';
 import 'package:ecommerce_app/wiget_common/bg_witget.dart';
 import 'package:ecommerce_app/wiget_common/custom_textFeild.dart';
@@ -87,7 +88,9 @@ class loginScreen extends StatelessWidget {
                                 name: signUp,
                                 color: redColor,
                                 primary: lightGolden,
-                                onPress: () {})),
+                                onPress: () {
+                                  Get.to(() => signUpScreen());
+                                })),
                         SizedBox(
                           height: 5,
                         ),
