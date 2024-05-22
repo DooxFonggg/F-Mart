@@ -1,4 +1,5 @@
 //khai báo const cho các name có trong app
+
 const appname = "fMart";
 const appversion = "Version 1.0.0";
 const credits = "@dooxfonggg";
@@ -19,3 +20,7 @@ const loginWith = "Hoặc";
 const privacyPolicy = "chính sách bảo mật";
 const termsAndConditions = "điều khoản sử dụng";
 const alreadyHaveAccount = "Bạn đã có tài khoản?";
+const home = "Trang chủ";
+const cart = "Giỏ hàng";
+const categories = "Doanh mục";
+const account = "Tài khoản";

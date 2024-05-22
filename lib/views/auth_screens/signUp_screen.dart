@@ -85,9 +85,9 @@ class _signUpScreenState extends State<signUpScreen> {
                           children: [
                             Checkbox(
                                 checkColor: Colors.white,
-                                fillColor: MaterialStateProperty.all(redColor),
+                                fillColor: MaterialStateProperty.all(
+                                    isValue == true ? redColor : Colors.white),
                                 value: isValue,
-                                side: BorderSide.none,
                                 onChanged: (newValue) {
                                   setState(() {
                                     isValue = newValue!;
@@ -132,7 +132,8 @@ class _signUpScreenState extends State<signUpScreen> {
                             child: ourButton(
                                 name: signUp,
                                 color: whiteColor,
-                                primary: redColor,
+                                primary:
+                                    isValue == true ? redColor : lightGolden,
                                 onPress: () {})),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,

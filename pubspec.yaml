@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   velocity_x: ^4.1.2
   getx_test: ^1.0.3
+  flutter_bloc: ^8.1.5
   
 
 dev_dependencies:
